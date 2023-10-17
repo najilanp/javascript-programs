@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - DOM</title>
+</head>
+
+<body>
+    <h1 id="hone" onmouseover="colorChange()" onmouseleave="defaultColor()"><span id="dom">document object model</span>-tree structure</h1>
+<!-- ways to apply js -->
+<h3>different ways to apply js</h3>
+<ol>
+    <li>internal js:using script tag</li>
+    <li>external js: using external js file and link using script tag</li>
+</ol>
+<h3>to select html elements in js-dom methods</h3>
+<ol>
+    <li>using tag name:document.getelementbytagname("tagname")</li>
+    <li>using tag name:document.getelementbyid("id")</li>
+    <li>using tag name:document.getelementbyclassname("class")</li>
+</ol>
+</body>
+<script>
+    function colorChange(){
+      let tagname=document.getElementById("hone")
+      tagname.style.color="red"
+      dom.innerText="dom"
+      
+    }
+    function defaultColor(){
+        hone.style.color="blue"
+        dom.innerText="kllllllll"
+    }
+</script>
+</html>

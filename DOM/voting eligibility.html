@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 >eligibility</h1>
+    <input id="ageinput" type="text">
+    <button type="button" onclick="eligibility()">submit</button>
+    <div id="result">
+
+    </div>
+</body>
+<script>
+    function eligibility(){
+  age=ageinput.value
+  if(age){
+    if(age>=18){
+        result.innerText="eligible";
+        result.style.color="green"
+    }else{
+        result.innerText="not";
+        result.style.color="red"
+    }
+  }else{
+    alert("enter a valid input")
+  }
+    }
+</script>
+</html>
+
+
+
+
+
